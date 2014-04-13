@@ -1,0 +1,19 @@
+Index: qrouter-1.1/Makefile.in
+===================================================================
+--- qrouter-1.1.orig/Makefile.in	2014-04-13 19:16:15.737086530 +0200
++++ qrouter-1.1/Makefile.in	2014-04-13 19:19:49.037088341 +0200
+@@ -21,10 +21,10 @@
+ qrouter$(EXEEXT): $(OBJECTS)
+ 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@ $(LIBS) -lm
+ 
+-install:
+-	@echo "Installing qrouter"
+-	$(INSTALL) -d ${BININSTALL}
+-	$(INSTALL) qrouter ${BININSTALL}
++#install:
++#	@echo "Installing qrouter"
++#	$(INSTALL) -d ${BININSTALL}
++#	$(INSTALL) qrouter ${BININSTALL}
+ 
+ uninstall:
+ 	$(RM) -f ${BININSTALL}/qrouter

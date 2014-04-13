@@ -1,0 +1,5 @@
+qrouter (1.1.50-1~precise) precise; urgency=low
+
+  * First ubuntu package of qrouter 
+
+ -- Ruben Undheim <ruben.undheim@gmail.com>  Sun, 13 Apr 2014 19:10:31 +0200

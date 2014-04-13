@@ -1,0 +1,14 @@
+Source: qrouter
+Section: universe/electronics
+Priority: extra
+Maintainer: Ruben Undheim <ruben.undheim@gmail.com>
+Build-Depends: debhelper (>= 9), autotools-dev
+Standards-Version: 3.9.2
+Homepage: http://opencircuitdesign.com/qrouter/
+#Vcs-Git: git://opencircuitdesign.com/qrouter-1.1
+
+Package: qrouter
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Multi-level, over-the-cell maze router
+ A router for digital design.
