@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PACKAGENAME=qrouter
-VERSION=1.1.55
+VERSION=1.1.54
 rm -rf createdeb/
 mkdir createdeb
 #rm -rf createdeb/$PACKAGENAME-$VERSION
