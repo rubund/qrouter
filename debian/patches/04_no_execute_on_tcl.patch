@@ -1,0 +1,16 @@
+Description: qrouter.tcl should not be installed
+  with the execute permission.
+Forwarded: will do
+Author: Ruben Undheim <ruben.undheim@gmail.com>
+Index: qrouter-1.2.29/Makefile.in
+===================================================================
+--- qrouter-1.2.29.orig/Makefile.in	2014-09-07 19:05:24.733312208 +0200
++++ qrouter-1.2.29/Makefile.in	2014-09-07 19:06:06.757311939 +0200
+@@ -58,7 +58,6 @@
+ 	    -e '/VERSION/s#VERSION#${VERSION}#' \
+ 	    -e '/REVISION/s#REVISION#${REVISION}#' \
+ 		qrouter.tcl.in > $@
+-	chmod 0755 $@
+ 
+ qrouter.sh: qrouter.sh.in
+ 	sed -e '/WISH_EXE/s#WISH_EXE#${WISH_EXE}#' \
