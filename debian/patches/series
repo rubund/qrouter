@@ -1,2 +1,3 @@
 01_remove_install_target.patch
 02_remove_config_files.patch
+03_multiarch.patch

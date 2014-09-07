@@ -1,1 +1,6 @@
 qrouter usr/bin
+qrouter.so usr/share/qrouter
+qrouterexec usr/share/qrouter
+console.tcl usr/share/qrouter
+tkcon.tcl usr/share/qrouter
+qrouter.tcl usr/share/qrouter
