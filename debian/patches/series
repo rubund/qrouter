@@ -1,2 +1,2 @@
-removeinstall.diff
-remove_files.patch
+01_remove_install_target.patch
+02_remove_config_files.patch

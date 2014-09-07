@@ -1,3 +1,7 @@
+Description: config.log and config.status are deleted from the source
+  to prevent a lintian warning.
+Forwarded: will do
+Author: Ruben Undheim <ruben.undheim@gmail.com>
 Index: qrouter-1.1/config.log
 ===================================================================
 --- qrouter-1.1.orig/config.log	2014-09-06 10:14:44.588247370 +0200

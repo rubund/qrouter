@@ -1,3 +1,8 @@
+Description: The install target in the Makefile causes problems
+  when building the debian package. This patch simply removes that
+  target.
+Forwarded: Doesn't make sense upstream
+Author: Ruben Undheim <ruben.undheim@gmail.com>
 Index: qrouter-1.1/Makefile.in
 ===================================================================
 --- qrouter-1.1.orig/Makefile.in	2014-04-13 19:16:15.737086530 +0200
