@@ -1,3 +1,8 @@
+Description: Upstream doesn't take into account that libraries
+  might be installed in /usr/lib/${DEB_HOST_MULTIARCH}. This
+  patch fixes that.
+Forwarded: will do
+Author: Ruben Undheim <ruben.undheim@gmail.com>
 Index: qrouter-1.2.29/configure
 ===================================================================
 --- qrouter-1.2.29.orig/configure
