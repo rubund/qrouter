@@ -3,22 +3,15 @@ Description: The install target in the Makefile causes problems
   target.
 Forwarded: Doesn't make sense upstream
 Author: Ruben Undheim <ruben.undheim@gmail.com>
-Index: qrouter-1.1/Makefile.in
 ===================================================================
---- qrouter-1.1.orig/Makefile.in	2014-04-13 19:16:15.737086530 +0200
-+++ qrouter-1.1/Makefile.in	2014-04-13 19:19:49.037088341 +0200
-@@ -21,10 +21,10 @@
- qrouter$(EXEEXT): $(OBJECTS)
- 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@ $(LIBS) -lm
+--- qrouter-1.2.29.orig/Makefile.in
++++ qrouter-1.2.29/Makefile.in
+@@ -47,7 +47,7 @@ BININSTALL = ${prefix}/bin
  
--install:
--	@echo "Installing qrouter"
--	$(INSTALL) -d ${BININSTALL}
--	$(INSTALL) qrouter ${BININSTALL}
-+#install:
-+#	@echo "Installing qrouter"
-+#	$(INSTALL) -d ${BININSTALL}
-+#	$(INSTALL) qrouter ${BININSTALL}
+ all: $(ALL_TARGET)
  
- uninstall:
- 	$(RM) -f ${BININSTALL}/qrouter
+-install: $(INSTALL_TARGET)
++#install: $(INSTALL_TARGET)
+ 
+ nointerp: qrouter$(EXEEXT)
+ 
