@@ -1,0 +1,18 @@
+Description: with-libdir parameter fails if
+  directory does not exist.
+Forwarded: will do
+Author: Ruben Undheim <ruben.undheim@gmail.com>
+Index: qrouter-1.2.29/configure
+===================================================================
+--- qrouter-1.2.29.orig/configure	2014-09-07 19:31:40.033302125 +0200
++++ qrouter-1.2.29/configure	2014-09-07 19:32:21.953301857 +0200
+@@ -4047,9 +4047,7 @@
+ # Check whether --with-libdir was given.
+ if test "${with_libdir+set}" = set; then :
+   withval=$with_libdir;
+-   if test -d "$withval"; then
+       QROUTER_LIB_DIR=$withval
+-   fi
+ 
+ fi
+ 

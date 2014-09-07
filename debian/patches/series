@@ -2,3 +2,4 @@
 02_remove_config_files.patch
 03_multiarch.patch
 04_no_execute_on_tcl.patch
+05_fixlibdir_problem.patch
