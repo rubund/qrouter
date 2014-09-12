@@ -1,7 +1,7 @@
 Description: Passing down CFLAGS and LDFLAGS
   so that hardening is activated and such that
   it's not linking with unused libraries.
-Forwarded: doesn't make sense upstreamm 
+Forwarded: will do
 Author: Ruben Undheim <ruben.undheim@gmail.com>
 Index: qrouter-1.2.29/Makefile.in
 ===================================================================
