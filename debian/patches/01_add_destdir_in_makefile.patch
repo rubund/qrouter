@@ -31,9 +31,9 @@ Index: qrouter-1.2.31/Makefile.in
 +	$(INSTALL) qrouter.sh $(DESTDIR)${BININSTALL}/qrouter
 +	$(INSTALL) qrouter$(SHDLIB_EXT) $(DESTDIR)${LIBINSTALL}
 +	$(INSTALL) qrouterexec$(EXEEXT) $(DESTDIR)${LIBINSTALL}
-+	$(INSTALL) console.tcl $(DESTDIR)${LIBINSTALL}
++	$(INSTALL) -m 0644 console.tcl $(DESTDIR)${LIBINSTALL}
 +	$(INSTALL) tkcon.tcl $(DESTDIR)${LIBINSTALL}
-+	$(INSTALL) qrouter.tcl $(DESTDIR)${LIBINSTALL}
++	$(INSTALL) -m 0644 qrouter.tcl $(DESTDIR)${LIBINSTALL}
  
  uninstall:
  	$(RM) ${BININSTALL}/qrouter
